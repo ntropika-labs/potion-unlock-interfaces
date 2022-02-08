@@ -1,0 +1,12 @@
+{
+  "name": "potion-unlock-interfaces",
+  "version": "1.0.0",
+  "description": "Contract interfaces for Potion Unlock",
+  "main": "index.js",
+  "repository": "https://github.com/potion-labs/potion-unlock-interfaces",
+  "author": "Potion Labs",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2"
+  }
+}
