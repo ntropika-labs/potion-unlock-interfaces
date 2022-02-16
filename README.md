@@ -40,6 +40,8 @@ All Secret Pieces are non-overlapping. This particularly means that a Secret Pie
 identified by its position in the Secret. This is, there is only one Secret Piece that starts at
 the Secret position 1234, for example.
 
+You can find the current rarity configuration for the Potion Unlock game in the file _RARITY_CONFIG.json_
+
 ## Contracts
 
 There are 2 main contracts involved in the **Potion Unlock** game:

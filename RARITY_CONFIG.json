@@ -1,0 +1,56 @@
+[
+    {
+        "startTokenId": 1,
+        "endTokenId": 1478,
+        "secretSegmentStart": 0,
+        "secretSegmentLength": 2217,
+        "bytesPerPiece": 3,
+        "rarityId": 0,
+        "rarityName": "Wise Wizard"
+    },
+    {
+        "startTokenId": 1479,
+        "endTokenId": 2000,
+        "secretSegmentStart": 2217,
+        "secretSegmentLength": 522,
+        "bytesPerPiece": 2,
+        "rarityId": 1,
+        "rarityName": "Kelly Knight"
+    },
+    {
+        "startTokenId": 2001,
+        "endTokenId": 4850,
+        "secretSegmentStart": 2739,
+        "secretSegmentLength": 700,
+        "bytesPerPiece": 28,
+        "rarityId": 2,
+        "rarityName": "OG"
+    },
+    {
+        "startTokenId": 4851,
+        "endTokenId": 7450,
+        "secretSegmentStart": 3439,
+        "secretSegmentLength": 364,
+        "bytesPerPiece": 14,
+        "rarityId": 3,
+        "rarityName": "Fellowship"
+    },
+    {
+        "startTokenId": 7451,
+        "endTokenId": 9250,
+        "secretSegmentStart": 3803,
+        "secretSegmentLength": 720,
+        "bytesPerPiece": 16,
+        "rarityId": 4,
+        "rarityName": "Advanced"
+    },
+    {
+        "startTokenId": 9251,
+        "endTokenId": 10000,
+        "secretSegmentStart": 4523,
+        "secretSegmentLength": 960,
+        "bytesPerPiece": 32,
+        "rarityId": 5,
+        "rarityName": "Legendary"
+    }
+]
