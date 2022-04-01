@@ -10,7 +10,7 @@ pragma solidity >=0.8.0;
     This contract does not incentivize the validation of the Unlock Key, but provides the necessary functions
     to allow for an external contract to implement such functionality.
 */
-interface NFTPotionValidator {
+interface INFTPotionValidator {
     //-------------------------------------------------------
     // EVENTS
     //-------------------------------------------------------
@@ -23,7 +23,12 @@ interface NFTPotionValidator {
         @param secretStartPos The start position of the Secret Piece in the Secret
         @param decryptedSecret The piece of the Unlock Key that was decrypted and published
      */
-    event NFTValidated(address indexed owner, uint256 indexed tokenId, uint256 secretStartPos, bytes decryptedSecret);
+    event NFTValidated(
+        address indexed owner,
+        uint256 indexed tokenId,
+        uint256 secretStartPos,
+        bytes decryptedSecret
+    );
 
     /**
         @notice Validates the piece of the Unlock Key agains the given Merkle proof
@@ -72,5 +77,8 @@ interface NFTPotionValidator {
         @return status Validation status for each token ID indicating if the given token ID
         has been validated at least once
      */
-    function getValidationStatus(uint256[] calldata tokenIds) external view returns (bool[] memory status);
+    function getValidationStatus(uint256[] calldata tokenIds)
+        external
+        view
+        returns (bool[] memory status);
 }

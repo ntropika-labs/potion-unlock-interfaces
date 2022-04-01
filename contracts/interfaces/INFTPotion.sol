@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
     The NFT contract is an ERC721 contract with auctioning capabilities. The auction interface
     is privileged only to the owner of the contract. 
  */
-interface NFTPotion {
+interface INFTPotion is IERC721 {
     //-------------------------------------------------------
     // DATA TYPES
     //-------------------------------------------------------
@@ -52,11 +52,11 @@ interface NFTPotion {
         range of NFTs purchased.
      */
     event NFTPurchased(
-        address indexed buyer,          // Address of the buyer
-        uint32 indexed startTokenId,    // First token ID purchased
-        uint32 amount,                  // Amount of tokens purchased
-        uint256 limitPrice,             // Maximum price the buyer was willing to pay
-        string publicKey                // Public key of the buyer for the unlock mechanism
+        address indexed buyer, // Address of the buyer
+        uint32 indexed startTokenId, // First token ID purchased
+        uint32 amount, // Amount of tokens purchased
+        uint256 limitPrice, // Maximum price the buyer was willing to pay
+        string publicKey // Public key of the buyer for the unlock mechanism
     );
 
     //-------------------------------------------------------
@@ -73,7 +73,10 @@ interface NFTPotion {
         @dev If the returned rarity has the bytesPerPiece field set to 0, then the configuration
         does not exist for the given rarityId
      */
-    function rarityConfig(uint256 rarityId) external view returns (RarityConfigItem memory rarityConfigItem);
+    function rarityConfig(uint256 rarityId)
+        external
+        view
+        returns (RarityConfigItem memory rarityConfigItem);
 
     /**
         @notice Calculates the position and length of the secret piece associated
